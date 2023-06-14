@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Favorite</title>
+</head>
+<body>
+    <!--==============================Inceput navbar============================-->
+    <nav>
+        <a href="#"><img src="images/uvtLogo2.png"></a>     <!---de pus link catre acasa-->
+          <div class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="#">Acasa</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="#">Favorite</a></li>
+              <li><a href="#">Notificari</a></li>
+            </ul>
+          </div>   
+          <!------------------------------------------------ DROP DOWN MENU -------->
+          <div class="dropdown">
+            <button class="dropbtn">Meniu &#9662;</button>
+            <div class="dropdown-content">
+              <a href="edit-acc.html">Editare cont</a>
+              <a href="#">Iesire din cont</a>
+              <a href="#">Sterge cont</a>
+            </div>
+          </div>  
+      </nav>
+    <!--==============================Sfarsit navbar============================-->
+
+    <div class="container-fav">
+      <h1>Postari Favorite</h1>
+        <div class="favorites-list">
+                <div class="post-fav">
+                    <div class="post-author-fav">
+                        <img src="images/jennaortega.png">                 <!---de pus poza--->
+                        <div>
+                            <h1>Jenna Ortega</h1>
+                            <small>Asked <span>2 days</span> ago | Viewed <span>100</span> times</small> 
+                        </div>
+                    </div>
+                    <p>Unde se poate valida autorizatia de transport?</p>    
+                    <div class="post-activity-fav">
+                            <div class="post-activity-answer-fav">
+                                <i class="far fa-comment"></i>
+                                <span>Answers</span>
+                            </div>
+                            <div class="post-activity-edit-fav">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span>Edit</span> 
+                            </div>
+                            <div class="post-activity-delete-fav">
+                                <i class="fa-solid fa-trash-arrow-up"></i>
+                                <span>Delete</span>
+                            </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="post-fav">
+                        <div class="post-author-fav">
+                            <img src="images/jennaortega.png">                 <!---de pus poza--->
+                                <div>
+                                <h1>Jenna Ortega</h1>
+                                <small>Asked <span>5 days</span> ago | Viewed <span>20</span> times</small>
+                            </div>
+                        </div>
+                        <p>Unde se gasesc listele cu teme propuse de licenta?</p>
+                        <div class="post-activity-fav">
+                            <div class="post-activity-answer-fav">
+                                <i class="far fa-comment"></i>
+                                <span>Answers</span>
+                            </div>
+                            <div class="post-activity-edit-fav">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span>Edit</span>
+                            </div>
+                            <div class="post-activity-delete-fav">
+                                <i class="fa-solid fa-trash-arrow-up"></i>
+                                <span>Delete</span>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="post-fav">
+                    <div class="post-author-fav">
+                        <img src="images/jennaortega.png">                 <!---de pus poza--->
+                            <div>
+                            <h1>Jenna Ortega</h1>
+                            <small>Asked <span>7 days</span> ago | Viewed <span>35</span> times</small> 
+                            </div>
+                    </div>
+                    <p>Pana cand se poate depune adeverenta pentru reducerea numarului de prezente obligatorii pentru cei ce lucreaza?</p>    
+                    <div class="post-activity-fav">
+                        <div class="post-activity-answer-fav">
+                            <i class="far fa-comment"></i>
+                            <span>Answers</span>
+                        </div>
+                        <div class="post-activity-edit-fav">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Edit</span> 
+                        </div>
+                        <div class="post-activity-delete-fav">
+                            <i class="fa-solid fa-trash-arrow-up"></i> 
+                            <span>Delete</span>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="post-fav">
+                        <div class="post-author-fav">
+                            <img src="images/jennaortega.png">                 <!---de pus poza--->
+                                <div>
+                                <h1>Jenna Ortega</h1>
+                                <small>Asked <span>10 days</span> ago | Viewed <span>150</span> times</small> 
+                                </div>
+                        </div>
+                        <p>Ziua de 1 iunie este libera?</p>    
+                        <div class="post-activity">
+                            <div class="post-activity-answer-fav" onclick="toggleCommentSection(this)">
+                                <i class="far fa-comment"></i>
+                                <span>Answers</span>
+                            </div>
+                            <!-- Add the comment section -->
+                            <div class="comment-section-fav">            <!---doar asta are comment section--->
+                                <form>
+                                <textarea placeholder="Add a comment"></textarea>
+                                <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                            <!-- End comment section -->
+                            <div class="post-activity-edit-fav">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <span>Edit</span> 
+                            </div>
+                            <div class="post-activity-delete-fav">
+                                <i class="fa-solid fa-trash-arrow-up"></i> 
+                                <span>Delete</span>
+                            </div>
+                        </div>
+                </div> 
+      </div>
+</div>
+
+<script>
+    // Add your JavaScript code here
+    function toggleCommentSection(button) {
+        const commentSection = button.nextElementSibling;
+        commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
+        // Add the logic to handle favoriting/unfavoriting posts
+        const postActivities = button.parentElement;
+        const post = postActivities.parentElement;
+        const isFavorite = post.classList.contains('favorite');
+
+        if (isFavorite) {
+        // Unfavorite the post
+        post.classList.remove('favorite');
+        button.innerHTML = '<i class="far fa-heart"></i>';
+        } else {
+        // Favorite the post
+        post.classList.add('favorite');
+        button.innerHTML = '<i class="fas fa-heart"></i>';
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+                    

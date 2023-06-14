@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Editare cont</title>
+</head>
+<body class="container-login100">
+  <!-- Navbar -->
+  <nav>
+    <a href="/pc/acasa.php"><img src="images/uvtLogo2.png"></a>     <!---de pus link catre acasa-->
+      <div class="nav-links" id="navLinks">
+        
+              <ul>
+                  <li><a href="/pc/acasa.php">Acasa</a></li>
+                  <li><a href="profil.php">Profil</a></li>
+                  <li><a href="fav.php">Favorite</a></li>
+                  
+                  
+              </ul>
+
+      </div>   
+
+       <!------------------------------------------------ DROP DOWN MENU -------->
+      <div class="dropdown">
+        <button class="dropbtn">Meniu &#9662;</button>
+        <div class="dropdown-content">
+          <a href="edit-acc.html">Editare cont</a>
+          <a href="/pc/inregistrare.php">Iesire din cont</a>
+          <a href="stergere_cont.php">Sterge cont</a>
+        </div>
+      </div>
+      
+  </nav>
+
+  <div class="container1">
+    <div class="main-content">
+      <div class="edit-account">
+        <h1>Editare cont</h1>
+        <form action="/pc/edit_acc.php" method="post" enctype="multipart/form-data">
+          
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Introduceti email-ul dorit">
+
+          <label for="password">Parola:</label>
+          <input type="password" id="password" name="password" placeholder="Introduceti noua parola">
+
+          <label for="description">Descriere:</label>
+          <textarea id="description" name="description" placeholder="introduceti descrierea dorita"></textarea>
+          
+          <label for="image">Poza profil:</label>
+          <input type="file" name="image">
+         
+
+          <label for="profile-picture">Poza coperta:</label>
+          <input type="file" id="back-picture" name="back-picture">
+
+          <button type="submit">Salveaza schimbari</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
