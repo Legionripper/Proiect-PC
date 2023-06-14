@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverflowUVT</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="container-login100">
+    <br><br><br><br><br><br><br><br>
+    <h3 class="titlu_meniu">Incarca</h3>
+    <div class="upload_postare">
+        <form action="/pc/upload.php" method="post"> <!--aici link php-->
+            <label for="titlu_postare">Titlu:</label>
+            <input type="text" id="titlu_postare" name="titlu_postare"><br><br>
+            <p><label for="descriere_pb">Descriere Problema/Intrebare:</label></p>
+            <textarea id="descriere_pb" name="descriere_pb" rows="4" cols="110"></textarea>
+            
+            
+            
+            <br><br><br>
+            <label for="hashtag">Alege un hashtag:</label>
+            <select name="hashtag" id="hashtag">
+                
+                  <option value="#Arta">#Arta</option>
+                  <option value="#Drept">#Drept</option>
+                  <option value="#Economie">#Economie</option>
+                  <option value="#Informatica">#Informatica</option>
+                  <option value="#Litere">#Litere</option>
+                  <option value="#Filosofie">#Filosofie</option>
+                  <option value="#Fizica">#Fizica</option>
+                  <option value="#Sport">#Sport</option>
+                  <option value="#Biologie Chimie">#Biologie Chimie</option>
+                  <option value="#Psihologie">#Psihologie</option>
+                  <option value="#Muzica">#Muzica</option>
+                </select>
+            <br><br>
+            <a href=""><button class="btn" type="submit">Incarca</button></a>
+            
+        </form>
+    </div>
+</body>
+</html>
